@@ -1,0 +1,26 @@
+{
+  "name": "node-es7-service-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/app.js",
+  "scripts": {
+    "start": "tsc && cross-env NODE_PATH=./dist node ./src/bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "1.4.4",
+    "cors": "2.8.5",
+    "cross-env": "7.0.0",
+    "debug": "4.1.1",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "jest": "^25.1.0",
+    "joi": "14.3.1",
+    "npm-run-all": "4.1.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/joi": "^14.3.4",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}
