@@ -1,8 +1,6 @@
-import * as Joi from 'joi';
-
 import config from 'config/environment/variables';
 import { serviceSchema } from 'config/environment/schemas';
-const { error, value: envVars } = Joi.validate(config, serviceSchema);
+const { error, value: envVars } = serviceSchema.validate(config);
 
 if(error) {
     throw new Error(`Config validation error: ${error.message}`);
