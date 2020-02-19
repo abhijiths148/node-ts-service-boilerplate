@@ -4,7 +4,8 @@
   "private": true,
   "main": "./dist/app.js",
   "scripts": {
-    "start": "tsc && cross-env NODE_PATH=./dist node ./src/bin/www"
+    "start": "tsc && cross-env NODE_PATH=./dist node ./src/bin/www",
+    "debug:start": "tsc && cross-env NODE_PATH=./dist node --inspect ./src/bin/www"
   },
   "dependencies": {
     "cookie-parser": "1.4.4",
