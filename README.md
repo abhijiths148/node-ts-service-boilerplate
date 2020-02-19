@@ -1,7 +1,11 @@
-## ts-service-boilerplate
+# ts-service-boilerplate
 
-`copy .env_developmet to .env`
+## Prerequisite
+1. Node
+2. TypeScript
 
-`npm start`
+## How to run the project
 
-Goto: <http://localhost:5000/notFound>
+1. Create `.env` file and copy `.env_developmet` to `.env`
+2. In project folder run `npm start`
+3. Go to `http://localhost:<PORT you added in the .env file>/`
