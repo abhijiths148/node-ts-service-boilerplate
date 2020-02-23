@@ -7,6 +7,15 @@ function createFailResponse(req: Request, res: Response, code: number, message: 
     });
 }
 
+function createSuccessResponse(req: Request, res: Response, code: number, message: string, data: {}) {
+    return res.status(code).json({
+        status: 'success',
+        message,
+        data
+    });
+}
+
 export {
+    createSuccessResponse,
     createFailResponse
 }
