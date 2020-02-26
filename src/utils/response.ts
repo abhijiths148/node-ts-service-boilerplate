@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 
 function createFailResponse(req: Request, res: Response, code: number, message: string) {
     return res.status(code).json({
-        status: 'fail',
+        status: 'failed',
         message,
     });
 }
@@ -15,7 +15,16 @@ function createSuccessResponse(req: Request, res: Response, code: number, messag
     });
 }
 
+function createErrorResponse(req: Request, res: Response, code: number, message: string, error: {}) {
+    return res.status(code).json({
+        status: 'failed',
+        message,
+        error
+    });
+}
+
 export {
     createSuccessResponse,
-    createFailResponse
+    createFailResponse,
+    createErrorResponse
 }
