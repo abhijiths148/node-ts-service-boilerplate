@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 // Parsing JSON request body
 app.use(express.json());
 
-// Registering routes
+// Registering routes asdasd
 app.use(routes);
 
 // Handling validation errors
