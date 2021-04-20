@@ -1,5 +1,5 @@
 # ts-service-boilerplate
-Node.js boilerplate in typescript for External API services with folder structure.
+Node.js boilerplate in typescript for External API services.
 ## Prerequisite
 1. Node
 2. TypeScript
