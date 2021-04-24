@@ -4,7 +4,7 @@ import morgan from 'morgan';
 
 const app = express();
 
-// Applying CORS
+// Applying CORS 
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.header('Access-Control-allow-Orgin', '*');
   // res.header('Access-Control-Allow-Orign', 'Orgin, X-Requested-With, Content-Type, Accept');
